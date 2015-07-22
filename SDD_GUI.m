@@ -22,7 +22,7 @@ function varargout = SDD_GUI(varargin)
 
 % Edit the above text to modify the response to help SDD_GUI
 
-% Last Modified by GUIDE v2.5 02-Apr-2015 12:46:22
+% Last Modified by GUIDE v2.5 22-Jul-2015 10:51:52
 
 % Begin initialization code - DO NOT EDIT
 gui_Singleton = 1;
@@ -519,3 +519,22 @@ function edit29_CreateFcn(hObject, eventdata, handles)
 if ispc && isequal(get(hObject,'BackgroundColor'), get(0,'defaultUicontrolBackgroundColor'))
     set(hObject,'BackgroundColor','white');
 end
+
+
+% --- Executes on button press in togglebutton1.
+function togglebutton1_Callback(hObject, eventdata, handles)
+% hObject    handle to togglebutton1 (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    structure with handles and user data (see GUIDATA)
+
+% Hint: get(hObject,'Value') returns toggle state of togglebutton1
+set(handles.query1,'visible','on')
+
+% --- Executes on button press in togglebutton2.
+function togglebutton2_Callback(hObject, eventdata, handles)
+% hObject    handle to togglebutton2 (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    structure with handles and user data (see GUIDATA)
+
+% Hint: get(hObject,'Value') returns toggle state of togglebutton2
+set(handles.query1,'visible','off')
